@@ -1,4 +1,4 @@
-# exercise_tutor.py
+# exercise/exercise_tutor.py
 
 import os
 from uuid import uuid4

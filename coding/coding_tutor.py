@@ -1,4 +1,4 @@
-# coding_tutor.py
+# coding/coding_tutor.py
 
 import os
 from uuid import uuid4
@@ -61,7 +61,6 @@ def handle_coding_tutor(user_input: str) -> str:
 
     return result
 
-
 # 🔧 프롬프트 로더 (txt 파일에서 system + user template 분리)
 def load_combined_prompt() -> tuple[str, str]:
     """
@@ -80,7 +79,6 @@ def load_combined_prompt() -> tuple[str, str]:
         user_prompt = "{context}\n\n{question}"     # fallback 템플릿
 
     return system_prompt.strip(), user_prompt.strip()
-
 
 # 💬 프롬프트 포맷팅: context와 question을 템플릿에 삽입
 def format_prompt(template: str, context: str, question: str) -> str:
